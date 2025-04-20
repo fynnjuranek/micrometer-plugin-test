@@ -1,0 +1,26 @@
+[[observability-spans]]
+=== Observability - Spans
+
+Below you can find a list of all spans declared by this project.
+
+[[observability-spans-element]]
+==== Element Span
+
+> Meter with description
+
+**Span name** `com.example.observation` (defined by convention class `com.example.support.micrometer.DefaultObservationConvention`).
+
+Fully qualified name of the enclosing class `com.example.support.micrometer.CustomObservationDocumentation`.
+
+
+
+.Tag Keys
+|===
+|Name | Description
+|`classifier` _(required)_|Classifier
+|`content` _(required)_|Content
+|===
+
+
+
+

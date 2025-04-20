@@ -1,0 +1,38 @@
+[[observability-metrics]]
+=== Observability - Metrics
+
+Below you can find a list of all metrics declared by this project.
+
+[[observability-metrics-element]]
+==== Element
+
+____
+Meter with description
+____
+
+
+**Metric name** `com.example.observation` (defined by convention class `com.example.support.micrometer.DefaultObservationConvention`). **Type** `timer`.
+
+**Metric name** `com.example.observation.active` (defined by convention class `com.example.support.micrometer.DefaultObservationConvention`). **Type** `long task timer`.
+
+
+IMPORTANT: KeyValues that are added after starting the Observation might be missing from the *.active metrics.
+
+
+IMPORTANT: Micrometer internally uses `nanoseconds` for the baseunit. However, each backend determines the actual baseunit. (i.e. Prometheus uses seconds)
+
+
+Fully qualified name of the enclosing class `com.example.support.micrometer.CustomObservationDocumentation`.
+
+
+
+.Low cardinality Keys
+[cols="a,a"]
+|===
+|Name | Description
+|`classifier` _(required)_|Classifier
+|===
+
+
+
+
